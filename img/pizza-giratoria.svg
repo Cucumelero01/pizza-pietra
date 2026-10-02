@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <circle cx="200" cy="200" r="196" fill="#E8CBA0"/>
+  <circle cx="200" cy="200" r="172" fill="#F0DDB8"/>
+  <circle cx="200" cy="200" r="160" fill="#F6C766"/>
+  <circle cx="200" cy="200" r="160" fill="#EF9235" opacity="0.35"/>
+
+  <g fill="#7A2E20">
+    <circle cx="150" cy="120" r="15"/>
+    <circle cx="255" cy="150" r="15"/>
+    <circle cx="120" cy="220" r="15"/>
+    <circle cx="230" cy="260" r="15"/>
+    <circle cx="180" cy="200" r="15"/>
+    <circle cx="290" cy="230" r="14"/>
+    <circle cx="150" cy="290" r="14"/>
+  </g>
+
+  <g fill="#0F6043">
+    <ellipse cx="185" cy="150" rx="10" ry="5" transform="rotate(20 185 150)"/>
+    <ellipse cx="245" cy="200" rx="10" ry="5" transform="rotate(-15 245 200)"/>
+    <ellipse cx="150" cy="255" rx="10" ry="5" transform="rotate(40 150 255)"/>
+    <ellipse cx="270" cy="270" rx="10" ry="5" transform="rotate(-25 270 270)"/>
+    <ellipse cx="205" cy="240" rx="10" ry="5" transform="rotate(10 205 240)"/>
+    <ellipse cx="130" cy="160" rx="10" ry="5" transform="rotate(-30 130 160)"/>
+  </g>
+
+  <g fill="#FDF3E9" opacity="0.8">
+    <circle cx="200" cy="170" r="4"/>
+    <circle cx="165" cy="200" r="4"/>
+    <circle cx="230" cy="220" r="4"/>
+    <circle cx="195" cy="255" r="4"/>
+    <circle cx="255" cy="180" r="4"/>
+    <circle cx="140" cy="240" r="4"/>
+    <circle cx="270" cy="240" r="4"/>
+  </g>
+</svg>

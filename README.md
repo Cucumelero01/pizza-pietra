@@ -30,7 +30,8 @@ pizza-pietra/
 │   └── menu.js            → ⭐ ACÁ SE CAMBIAN LOS PRECIOS Y PRODUCTOS ⭐
 │
 └── img/
-    ├── logo.jpg, favicon.svg, nosotros.png
+    ├── logo-verde.png, logo-naranja.png, nosotros.png
+    ├── pizza-giratoria.png → La pizza que gira al lado del título de Catering
     ├── productos/          → Fotos de pizzas, boxes y tortas
     └── galeria/            → Fotos de la galería
 ```
@@ -86,8 +87,8 @@ sepa programación que revise el cambio.
 Buscá esta línea, cerca del principio del archivo:
 
 ```js
-whatsappInternacional: "5493517383031",
-whatsappVisible: "351 738-3031",
+whatsappInternacional: "5493518355245",
+whatsappVisible: "351 835-5245",
 ```
 
 - `whatsappInternacional`: siempre empieza con `549` + código de área (sin
@@ -147,14 +148,27 @@ imagen: "img/productos/pizza-real.jpg",
    absoluto, pero vas a tener que cambiar la extensión en esa misma línea
    de `.svg` a `.jpg` (o `.png`, según corresponda).
 
-Para la foto de "Sobre Nosotros", reemplazá el archivo `img/nosotros.svg`
+Para la foto de "Sobre Nosotros", reemplazá el archivo `img/nosotros.png`
 por tu foto y actualizá esta línea dentro de `index.html`:
 
 ```html
-<img src="img/nosotros.svg" alt="...">
+<img src="img/nosotros.png" alt="...">
 ```
 
-cambiando `img/nosotros.svg` por, por ejemplo, `img/nosotros.jpg`.
+cambiando `img/nosotros.png` por, por ejemplo, `img/nosotros.jpg`.
+
+La pizza que gira al lado del título de "Catering" es `img/pizza-giratoria.png`
+(una foto real, sin fondo, que incluye el garabato decorativo — gira todo
+junto como una sola imagen). Si más adelante querés cambiarla por otra
+foto, buscá esta línea en `index.html`:
+
+```html
+<img src="img/pizza-giratoria.png" alt="..." class="catering-pizza-giratoria" id="catering-pizza-giratoria">
+```
+
+y cambiá `img/pizza-giratoria.png` por la ruta de tu foto nueva. Para que
+gire bien, conviene que la foto sea de una pizza vista **desde arriba**,
+**bien redonda y centrada**, y sin fondo (o con fondo liso, fácil de recortar).
 
 ---
 

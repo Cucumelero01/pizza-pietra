@@ -29,8 +29,8 @@ const menuData = {
     nombreNegocio: "Pizza Pietra",
     // Número de WhatsApp en formato internacional, SIN espacios ni signos.
     // 54 = Argentina, 9 = celular, 351 = código de Córdoba, luego el número.
-    whatsappInternacional: "5493517383031",
-    whatsappVisible: "351 738-3031",
+    whatsappInternacional: "5493518355245",
+    whatsappVisible: "351 835-5245",
     instagramUrl: "https://www.instagram.com/pizzapietracba/",
     instagramVisible: "@pizzapietracba",
     email: "pizzaspietra@gmail.com",
@@ -45,7 +45,7 @@ const menuData = {
     heroTitulo: "Pizza Pietra",
     heroSubtitulo: "Pizza napolitana a la piedra, artesanal desde Córdoba",
     heroDestacado: "48 horas de fermentación",
-    heroDescripcion: "Somos dos hermanos apasionados por la pizza napolitana. Elaboramos cada masa de forma artesanal, con 48 horas de fermentación en frío, y la cocinamos a la piedra para lograr ese sabor y esa textura que solo se consiguen con tiempo y dedicación.",
+    heroDescripcion: "Somos dos hermanos apasionados por la pizza napolitana. Elaboramos cada masa de forma artesanal, con 48 horas de fermentación en frío, y la cocinamos a la piedra para lograr ese sabor y esa textura que solo se consiguen con tiempo y dedicación. Fusionamos la cocina italiana y la argentina.",
     sobreNosotrosTitulo: "Dos hermanos, una pasión",
     sobreNosotrosTexto: "Pizza Pietra nació de las ganas de compartir la verdadera pizza napolitana con nuestra ciudad. Somos dos hermanos que llevamos adelante cada paso del proceso: amasamos, fermentamos 48 horas, estiramos y horneamos a la piedra, pizza por pizza. Nos encargamos de eventos sociales, empresariales y de la atención de cada cliente en persona, porque creemos que la calidad y la cercanía van de la mano.",
     sobreNosotrosPuntos: [
@@ -66,31 +66,31 @@ const menuData = {
     {
       id: "pizzas-freezadas",
       nombre: "Pizzas Freezadas",
-      descripcion: "Nuestra pizza napolitana a la piedra, congelada para disfrutar en casa cuando quieras. Solo tenés que llevarla al horno.",
+      descripcion: "Nuestra pizza napolitana a la piedra, congelada para disfrutar en casa cuando quieras. Solo tenés que llevarla al horno. Consultá por las variedades disponibles de la semana.",
       imagen: "img/productos/pizza-freezada.png",
       opciones: [
-        { etiqueta: "Unidad", precio: 12000 },
-        { etiqueta: "Combo x4", precio: 44000 }
+        { etiqueta: "Unidad", precio: 14000 },
+        { etiqueta: "Combo x4", precio: 50000 }
       ]
     },
     {
       id: "box-frios",
-      nombre: "Box Sándwiches de Focaccia — Fríos",
-      descripcion: "Box de sándwiches de focaccia casera, opciones frías. Rinde aproximadamente 6 personas. Ideal para juntadas y oficinas.",
+      nombre: "Box Sándwiches de Focaccia Fríos",
+      descripcion: "Box de sándwiches de focaccia, opciones frías. Rinde aproximadamente 9 personas. Pican 18. Ideal para juntadas y oficinas.",
       imagen: "img/productos/box-frio.png",
       opciones: [
-        { etiqueta: "Box (rinde 6 personas)", precio: 80000 },
-        { etiqueta: "Promo 2 Box", precio: 150000 }
+        { etiqueta: "1 Box", precio: 85000 },
+        { etiqueta: "2 Box", precio: 160000 }
       ]
     },
     {
       id: "box-calientes",
-      nombre: "Box Sándwiches de Focaccia — Calientes",
-      descripcion: "Box de sándwiches de focaccia casera, opciones calientes. Rinde aproximadamente 6 personas. Recién salidos del horno.",
+      nombre: "Box Sándwiches de Focaccia Calientes",
+      descripcion: "Box de sándwiches de focaccia. Bondiola desmenuzada, coleslaw y mayonesa casera. Rinde aproximadamente 9 personas. Pican 18.",
       imagen: "img/productos/box-caliente.png",
       opciones: [
-        { etiqueta: "Box (rinde 6 personas)", precio: 85000 },
-        { etiqueta: "Promo 2 Box", precio: 160000 }
+        { etiqueta: "1 Box", precio: 90000 },
+        { etiqueta: "2 Box", precio: 170000 }
       ]
     }
   ],
@@ -106,7 +106,7 @@ const menuData = {
     lista: [
       { nombre: "Coco con dulce de leche", precio: 36000 },
       { nombre: "Crumble de manzana", precio: 36000 },
-      { nombre: "Pastafrola", precio: 40000 },
+      { nombre: "Pastafrola", precio: 36000 },
       { nombre: "Cheesecake", precio: 40000 },
       { nombre: "Carrot cake", precio: 40000 },
       { nombre: "Chocotorta", precio: 40000 },
@@ -142,8 +142,7 @@ const menuData = {
     { nombre: "Marinara", vegetariana: true, ingredientes: ["Salsa de tomate", "Ajo", "Orégano", "Aceite de oliva"] },
     { nombre: "Mozzarella", vegetariana: true, ingredientes: ["Salsa de tomate", "Muzzarella", "Orégano"] },
     { nombre: "Napolitana", vegetariana: true, ingredientes: ["Salsa de tomate", "Muzzarella", "Rodajas de tomate", "Ajo", "Orégano"] },
-    { nombre: "Pesto", vegetariana: true, ingredientes: ["Fior di latte", "Salsa pesto", "Parmesano", "Piñones"] },
-    { nombre: "Pomodoro", vegetariana: true, ingredientes: ["Salsa de tomate", "Tomates cherry", "Albahaca fresca", "Aceite de oliva"] },
+    { nombre: "Pesto Pomodoro", vegetariana: true, ingredientes: ["Fior di latte", "Salsa pesto", "Tomates cherry", "Albahaca fresca", "Parmesano"] },
     { nombre: "Pimientos asados", vegetariana: true, ingredientes: ["Salsa de tomate", "Muzzarella", "Pimientos asados", "Orégano"] },
     { nombre: "Provenzal", vegetariana: true, ingredientes: ["Muzzarella", "Ajo y perejil", "Aceite de oliva"] },
     { nombre: "Provolone", vegetariana: true, ingredientes: ["Salsa de tomate", "Provolone", "Orégano", "Aceite de oliva"] },
@@ -155,10 +154,11 @@ const menuData = {
      ----------------------------------------------------------------------- */
   catering: {
     minimoPersonas: 20,
-    introduccion: "Llevamos la experiencia de la pizza napolitana a la piedra a tu evento social o empresarial. Cocinamos en el momento, con nuestro propio horno, para que tus invitados disfruten la pizza recién salida.",
+    introduccion: "Llevamos la experiencia de la pizza napolitana a la piedra a tu evento social o empresarial. Cocinamos en el momento, con nuestro propio horno, para que tus invitados disfruten la pizza recién salida. Es comida libre.",
+    notaDescuento: "A partir de 50 personas, el precio por persona es un poco más bajo.",
     grupos: [
       {
-        rango: "De 20 a 30 personas",
+        rango: "De 20 a 35 personas",
         detalle: "Se elige 1 opción de Entrada y 1 opción de Principal.",
         entradasPermitidas: 1,
         principalesPermitidos: 1
@@ -245,6 +245,11 @@ const menuData = {
       icono: "⏱️",
       titulo: "Duración del servicio",
       texto: "El servicio dura aproximadamente entre 1 hora y media y 2 horas."
+    },
+    {
+      icono: "🧾",
+      titulo: "Presupuesto",
+      texto: "El monto total del evento se calcula de acuerdo al precio actualizado al día del evento."
     }
   ],
 

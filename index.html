@@ -12,14 +12,14 @@
 <meta property="og:title" content="Pizza Pietra | Pizza Napolitana a la Piedra">
 <meta property="og:description" content="Pizza napolitana artesanal con 48 horas de fermentación. Catering para eventos, take away y pizzas congeladas en Córdoba.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="img/logo.jpg">
+<meta property="og:image" content="img/logo-verde.png">
 <meta property="og:locale" content="es_AR">
 
-<link rel="icon" type="image/jpeg" href="img/logo.jpg">
+<link rel="icon" type="image/png" href="img/logo-verde.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;0,900;1,600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=PT+Sans:wght@400;700&family=Sacramento&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -29,16 +29,15 @@
 <header class="site-header" id="header">
   <div class="container header-inner">
     <a href="#inicio" class="brand">
-      <img src="img/logo.jpg" alt="Logo Pizza Pietra" class="brand-logo">
-      <span class="brand-name">Pizza Pietra</span>
+      <img src="img/logo-verde.png" alt="Pietra Pizza" class="brand-logo">
     </a>
 
     <nav class="main-nav" id="main-nav">
       <ul>
         <li><a href="#inicio" class="nav-link">Inicio</a></li>
         <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
-        <li><a href="#take-away" class="nav-link">Take Away</a></li>
         <li><a href="#catering" class="nav-link">Catering</a></li>
+        <li><a href="#take-away" class="nav-link">Take Away</a></li>
         <li><a href="#galeria" class="nav-link">Galería</a></li>
         <li><a href="#contacto" class="nav-link">Contacto</a></li>
       </ul>
@@ -62,7 +61,7 @@
 
       <div class="hero-badge" id="hero-badge">
         <span class="hero-badge-icon">🍕</span>
-        <span>48 horas de fermentación</span>
+        <span class="hero-badge-texto">48 horas de fermentación</span>
       </div>
 
       <p class="hero-description" id="hero-descripcion"></p>
@@ -93,35 +92,21 @@
     </div>
   </section>
 
-  <!-- ======================= TAKE AWAY ======================= -->
-  <section class="section take-away" id="take-away">
-    <div class="container">
-      <p class="section-kicker">Para disfrutar en casa</p>
-      <h2 class="section-title">Take Away &amp; Autoservicio</h2>
-      <p class="section-subtitle">Llevá Pizza Pietra a tu mesa: pizzas congeladas, boxes de focaccia y tortas artesanales.</p>
-
-      <a href="#" id="takeaway-cta" target="_blank" rel="noopener" class="btn btn-primary takeaway-cta">
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.001 2C6.478 2 2 6.477 2 12c0 1.986.579 3.833 1.578 5.392L2 22l4.735-1.545A9.943 9.943 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12.001 2zm0 18.111a8.09 8.09 0 01-4.13-1.13l-.296-.176-3.075 1.004 1.017-2.999-.193-.308A8.086 8.086 0 013.89 12c0-4.475 3.638-8.112 8.112-8.112 4.474 0 8.111 3.637 8.111 8.112 0 4.474-3.637 8.111-8.112 8.111z"/></svg>
-        Hacé tu pedido por WhatsApp
-      </a>
-
-      <div class="cards-grid" id="takeaway-grid"></div>
-
-      <div class="tortas-block">
-        <h3 class="tortas-title">Tortas <span>(20 porciones aprox.)</span></h3>
-        <div class="tortas-grid" id="tortas-grid"></div>
-      </div>
-    </div>
-  </section>
-
   <!-- ======================= CATERING ======================= -->
   <section class="section catering" id="catering">
     <div class="container">
-      <p class="section-kicker section-kicker--inverse">Para tu evento</p>
-      <h2 class="section-title section-title--inverse">Catering Pizza Pietra</h2>
-      <p class="section-subtitle section-subtitle--inverse" id="catering-intro"></p>
+      <div class="catering-header">
+        <div class="catering-header-texto">
+          <p class="section-kicker section-kicker--inverse">Para tu evento</p>
+          <h2 class="section-title section-title--inverse">Catering Pizza Pietra</h2>
+          <p class="section-subtitle section-subtitle--inverse" id="catering-intro"></p>
+        </div>
+        <img src="img/pizza-giratoria.png" alt="Pizza napolitana a la piedra" class="catering-pizza-giratoria" id="catering-pizza-giratoria">
+      </div>
 
       <div class="catering-grupos" id="catering-grupos"></div>
+
+      <p class="catering-nota-descuento" id="catering-nota-descuento"></p>
 
       <div class="catering-opciones">
         <div class="catering-columna">
@@ -144,11 +129,15 @@
 
       <div class="cotizar-box">
         <h3>¿Estás organizando un evento?</h3>
-        <p>Consultanos por disponibilidad y presupuesto.</p>
-        <a href="#" id="catering-whatsapp-cta" target="_blank" rel="noopener" class="btn btn-primary btn-large">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.001 2C6.478 2 2 6.477 2 12c0 1.986.579 3.833 1.578 5.392L2 22l4.735-1.545A9.943 9.943 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12.001 2zm0 18.111a8.09 8.09 0 01-4.13-1.13l-.296-.176-3.075 1.004 1.017-2.999-.193-.308A8.086 8.086 0 013.89 12c0-4.475 3.638-8.112 8.112-8.112 4.474 0 8.111 3.637 8.111 8.112 0 4.474-3.637 8.111-8.112 8.111z"/></svg>
-          Consultar por WhatsApp
-        </a>
+        <p>Contanos cuántas personas son y te escribimos directo por WhatsApp.</p>
+        <form id="form-cotizar" class="cotizar-form">
+          <label for="cantidad-personas">Cantidad de personas</label>
+          <input type="number" id="cantidad-personas" name="cantidad-personas" min="1" placeholder="Ej: 40" required>
+          <button type="submit" class="btn btn-primary btn-large">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.001 2C6.478 2 2 6.477 2 12c0 1.986.579 3.833 1.578 5.392L2 22l4.735-1.545A9.943 9.943 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12.001 2zm0 18.111a8.09 8.09 0 01-4.13-1.13l-.296-.176-3.075 1.004 1.017-2.999-.193-.308A8.086 8.086 0 013.89 12c0-4.475 3.638-8.112 8.112-8.112 4.474 0 8.111 3.637 8.111 8.112 0 4.474-3.637 8.111-8.112 8.111z"/></svg>
+            Cotizar mi evento por WhatsApp
+          </button>
+        </form>
       </div>
     </div>
   </section>
@@ -159,6 +148,27 @@
       <p class="section-kicker">Cómo trabajamos</p>
       <h2 class="section-title">Requisitos y qué incluye el servicio</h2>
       <div class="requisitos-grid" id="requisitos-grid"></div>
+    </div>
+  </section>
+
+  <!-- ======================= TAKE AWAY ======================= -->
+  <section class="section take-away" id="take-away">
+    <div class="container">
+      <p class="section-kicker">Para disfrutar en casa</p>
+      <h2 class="section-title">Take Away &amp; Autoservicio</h2>
+      <p class="section-subtitle">Llevá Pizza Pietra a tu mesa: pizzas congeladas, boxes de focaccia y tortas artesanales.</p>
+
+      <a href="#" id="takeaway-cta" target="_blank" rel="noopener" class="btn btn-primary takeaway-cta">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.001 2C6.478 2 2 6.477 2 12c0 1.986.579 3.833 1.578 5.392L2 22l4.735-1.545A9.943 9.943 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12.001 2zm0 18.111a8.09 8.09 0 01-4.13-1.13l-.296-.176-3.075 1.004 1.017-2.999-.193-.308A8.086 8.086 0 013.89 12c0-4.475 3.638-8.112 8.112-8.112 4.474 0 8.111 3.637 8.111 8.112 0 4.474-3.637 8.111-8.112 8.111z"/></svg>
+        Hacé tu pedido por WhatsApp
+      </a>
+
+      <div class="cards-grid" id="takeaway-grid"></div>
+
+      <div class="tortas-block">
+        <h3 class="tortas-title">Tortas <span>(20 porciones aprox.)</span></h3>
+        <div class="tortas-grid" id="tortas-grid"></div>
+      </div>
     </div>
   </section>
 
@@ -206,8 +216,7 @@
 <footer class="site-footer">
   <div class="container footer-inner">
     <div class="footer-brand">
-      <img src="img/logo.jpg" alt="Logo Pizza Pietra" class="footer-logo">
-      <span>Pizza Pietra</span>
+      <img src="img/logo-naranja.png" alt="Pietra Pizza" class="footer-logo">
     </div>
     <p>&copy; <span id="footer-year"></span> Pizza Pietra.</p>
     <a href="#" id="footer-instagram" target="_blank" rel="noopener">Instagram</a>

@@ -73,10 +73,6 @@
     const mensajePedido = "Hola " + c.nombreNegocio + "! Quería hacer un pedido.";
     document.getElementById("takeaway-cta").href = linkWhatsApp(mensajePedido);
 
-    // Botón único de consulta de Catering (reemplaza los botones por tarjeta)
-    const mensajeCatering = "Hola " + c.nombreNegocio + "! Quería consultar por un catering para mi evento.";
-    document.getElementById("catering-whatsapp-cta").href = linkWhatsApp(mensajeCatering);
-
     document.getElementById("footer-year").textContent = new Date().getFullYear();
   }
 
@@ -139,6 +135,7 @@
     const cat = menuData.catering;
 
     document.getElementById("catering-intro").textContent = cat.introduccion;
+    document.getElementById("catering-nota-descuento").textContent = cat.notaDescuento;
 
     // Grupos (cantidad de personas)
     const gruposEl = document.getElementById("catering-grupos");
@@ -237,6 +234,51 @@
   }
 
   /* -----------------------------------------------------------------------
+     PIZZA GIRATORIA (Catering)
+     Gira según la posición del scroll de la página. Usa
+     requestAnimationFrame para que sea suave y no sobrecargue el navegador.
+     ----------------------------------------------------------------------- */
+  function activarPizzaGiratoria() {
+    const pizza = document.getElementById("catering-pizza-giratoria");
+    if (!pizza) return;
+
+    let actualizando = false;
+
+    function girar() {
+      const grados = window.scrollY * 0.15;
+      pizza.style.transform = "rotate(" + grados + "deg)";
+      actualizando = false;
+    }
+
+    window.addEventListener("scroll", function () {
+      if (!actualizando) {
+        window.requestAnimationFrame(girar);
+        actualizando = true;
+      }
+    });
+
+    girar();
+  }
+
+  /* -----------------------------------------------------------------------
+     FORMULARIO "COTIZAR MI EVENTO"
+     ----------------------------------------------------------------------- */
+  function activarFormularioCotizar() {
+    const form = document.getElementById("form-cotizar");
+    const input = document.getElementById("cantidad-personas");
+    const nombreNegocio = menuData.contacto.nombreNegocio;
+
+    form.addEventListener("submit", function (evento) {
+      evento.preventDefault();
+      const cantidad = input.value.trim();
+      if (!cantidad) return;
+
+      const mensaje = "Hola " + nombreNegocio + "! Quería consultar por un catering para " + cantidad + " personas.";
+      window.open(linkWhatsApp(mensaje), "_blank", "noopener");
+    });
+  }
+
+  /* -----------------------------------------------------------------------
      REQUISITOS
      ----------------------------------------------------------------------- */
   function pintarRequisitos() {
@@ -295,6 +337,8 @@
     pintarCatering();
     pintarSabores();
     activarModalIngredientes();
+    activarPizzaGiratoria();
+    activarFormularioCotizar();
     pintarRequisitos();
     pintarGaleria();
     activarMenuMovil();
