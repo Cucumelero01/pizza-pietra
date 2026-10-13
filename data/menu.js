@@ -124,31 +124,31 @@ const menuData = {
      en el sabor. Para modificarlos, agregá o quitá textos entre comillas
      dentro de los corchetes [ ], separados por comas.
      ----------------------------------------------------------------------- */
-  pizzaSabores: [
-    { nombre: "Americana", vegetariana: false, ingredientes: ["Salsa de tomate", "Muzzarella", "Jamón", "Morrones"] },
-    { nombre: "Berenjena", vegetariana: true, ingredientes: ["Salsa de tomate", "Muzzarella", "Berenjenas grilladas", "Albahaca fresca"] },
-    { nombre: "Bianca", vegetariana: true, ingredientes: ["Fior di latte", "Aceite de oliva", "Romero", "Sal en escamas"] },
+pizzaSabores: [
+    { nombre: "Americana", vegetariana: false, ingredientes: ["Salsa de tomate", "Muzzarella", "Huevo revuelto", "Bacon"] },
+    { nombre: "Berenjena", vegetariana: true, ingredientes: ["Salsa de tomate", "Muzzarella", "Berenjenas asadas", "Ajo en polvo" , "Aceite de oliva"] },
+    { nombre: "Bianca", vegetariana: true, ingredientes: ["Salsa Bechamel", "Muzarella", "Provolone", "Champiñones salteados" , "Papas finas" , "Romero" , "Aceite de oliva"] },
     { nombre: "Blue Bacon", vegetariana: false, ingredientes: ["Salsa de tomate", "Muzzarella", "Bacon crocante", "Queso azul"] },
-    { nombre: "Calabresa", vegetariana: false, ingredientes: ["Salsa de tomate", "Muzzarella", "Longaniza calabresa", "Aceitunas negras"] },
-    { nombre: "Cuatro Quesos", vegetariana: true, ingredientes: ["Salsa de tomate", "Muzzarella", "Provolone", "Queso azul", "Parmesano"] },
-    { nombre: "Cuori di Palma", vegetariana: true, ingredientes: ["Salsa de tomate", "Muzzarella", "Palmitos", "Aceitunas verdes"] },
-    { nombre: "Especial", vegetariana: false, ingredientes: ["Salsa de tomate", "Muzzarella", "Jamón", "Morrones", "Aceitunas"] },
-    { nombre: "Especial con huevo", vegetariana: false, ingredientes: ["Salsa de tomate", "Muzzarella", "Jamón", "Morrones", "Aceitunas", "Huevo"] },
-    { nombre: "Espinaca", vegetariana: true, ingredientes: ["Salsa de tomate", "Muzzarella", "Espinaca salteada", "Ajo", "Aceite de oliva"] },
-    { nombre: "Fugazeta", vegetariana: true, ingredientes: ["Muzzarella", "Cebolla caramelizada", "Orégano"] },
-    { nombre: "Fugazeta Pietra", vegetariana: true, ingredientes: ["Muzzarella", "Cebolla caramelizada", "Provolone", "Orégano"] },
-    { nombre: "Funghi Bacon", vegetariana: false, ingredientes: ["Salsa de tomate", "Muzzarella", "Champiñones", "Bacon"] },
-    { nombre: "Margarita", vegetariana: true, ingredientes: ["Salsa de tomate", "Fior di latte", "Albahaca fresca", "Aceite de oliva"] },
-    { nombre: "Marinara", vegetariana: true, ingredientes: ["Salsa de tomate", "Ajo", "Orégano", "Aceite de oliva"] },
+    { nombre: "Calabresa", vegetariana: false, ingredientes: ["Salsa de tomate", "Muzzarella", "Salame"] },
+    { nombre: "Cuatro Quesos", vegetariana: true, ingredientes: ["Salsa de tomate", "Muzzarella", "Provolone", "Queso azul", "Sardo" , "Oregano" , "Olivas Negras"] },
+    { nombre: "Cuori di Palma", vegetariana: true, ingredientes: ["Salsa de tomate", "Muzzarella", "Palmitos", "Salsa golf"] },
+    { nombre: "Especial", vegetariana: false, ingredientes: ["Salsa de tomate", "Muzzarella", "Jamón cocido", "Morrones asados"] },
+    { nombre: "Especial con huevo", vegetariana: false, ingredientes: ["Salsa de tomate", "Muzzarella", "Jamón cocido", "Huevos cocidos", "Oregano"] },
+    { nombre: "Espinaca", vegetariana: true, ingredientes: ["Salsa de blanca", "Muzzarella", "Espinaca salteada", "Pimienta"] },
+    { nombre: "Fugazeta", vegetariana: true, ingredientes: ["Salsa de tomate", "Muzzarella", "Cebolla salteada","Olivas negras" , "Orégano"] },
+    { nombre: "Fugazeta Pietra", vegetariana: true, ingredientes: ["Salsa de tomate", "Muzzarella", "Cebolla salteada", "Queso azul", "Nueces tostadas" , "miel"] },
+    { nombre: "Funghi Bacon", vegetariana: false, ingredientes: ["Salsa de tomate", "Muzzarella", "Cebolla salteada" , "Champiñones salteados", "Bacon" , "Perejil" , "Ajo"] },
+    { nombre: "Margarita", vegetariana: true, ingredientes: ["Salsa de tomate", "Muzarella" , "Parmesano", "Albahaca fresca", "Aceite de oliva"] },
+    { nombre: "Marinara", vegetariana: true, ingredientes: ["Salsa de tomate", "Albahaca", "Ajo", "Oregano" , "Pimienta" , "Aceite de oliva"] },
     { nombre: "Mozzarella", vegetariana: true, ingredientes: ["Salsa de tomate", "Muzzarella", "Orégano"] },
-    { nombre: "Napolitana", vegetariana: true, ingredientes: ["Salsa de tomate", "Muzzarella", "Rodajas de tomate", "Ajo", "Orégano"] },
-    { nombre: "Pesto Pomodoro", vegetariana: true, ingredientes: ["Fior di latte", "Salsa pesto", "Tomates cherry", "Albahaca fresca", "Parmesano"] },
-    { nombre: "Pimientos asados", vegetariana: true, ingredientes: ["Salsa de tomate", "Muzzarella", "Pimientos asados", "Orégano"] },
-    { nombre: "Provenzal", vegetariana: true, ingredientes: ["Muzzarella", "Ajo y perejil", "Aceite de oliva"] },
-    { nombre: "Provolone", vegetariana: true, ingredientes: ["Salsa de tomate", "Provolone", "Orégano", "Aceite de oliva"] },
-    { nombre: "Rúcula", vegetariana: false, ingredientes: ["Salsa de tomate", "Muzzarella", "Jamón crudo", "Rúcula fresca", "Parmesano"] }
+    { nombre: "Napolitana", vegetariana: true, ingredientes: ["Salsa de tomate", "Muzzarella", "Rodajas de tomate", "Olivas negras", "Orégano"] },
+    { nombre: "Pesto Pomodoro", vegetariana: true, ingredientes: ["Salsa de tomate", "Muzzarella", "Tomates secos", "Albahaca fresca", "Olivas negras"] },
+    { nombre: "Pimientos asados", vegetariana: true, ingredientes: ["Salsa de tomate", "Muzzarella", "Pimientos asados"] },
+    { nombre: "Provenzal", vegetariana: true, ingredientes: ["Salsa de tomate", "Muzzarella", "Ajo" ,  "Perejil", "Aceite de oliva"] },
+    { nombre: "Provolone", vegetariana: true, ingredientes: ["Salsa de tomate", "Provolone", "Romero", "Orégano", "Olivas negras"] },
+    { nombre: "Rúcula", vegetariana: false, ingredientes: ["Salsa de tomate", "Muzzarella", "Rúcula fresca","Bondiola", "Parmesano" ,"Aceite de oliva"] }
   ],
-
+  
   /* -----------------------------------------------------------------------
      CATERING PARA EVENTOS
      ----------------------------------------------------------------------- */
